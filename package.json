@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://isaiasycami1206.github.io/calendario-amoroso/build",
+  "homepage": "https://isaiasycami1206.github.io/calendario-amoroso/dist",
   "scripts": {
     "dev": "vite",
     "build": "tsc --project tsconfig.json && vite build",
