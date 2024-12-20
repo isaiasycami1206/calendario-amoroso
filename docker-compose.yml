@@ -1,0 +1,21 @@
+services:
+  app:
+    image: ni_eppweb_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dc_epp_app_container
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+    restart: always
+    networks:
+      - eppweb_network
+
+networks:
+  eppweb_network:
+    driver: bridge
